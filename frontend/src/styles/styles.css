@@ -3,28 +3,25 @@ body {
     margin: 0;
     padding: 0;
     font-family: 'Manrope', sans-serif; /* Change the font to Manrope */
-    color: #333;
+    color: #ffffff;
     display: flex;
     justify-content: center; /* Horizontally center the content */
     align-items: center; /* Vertically center the content */
     min-height: 100vh; /* Set a minimum height to fill the viewport */
-    background: radial-gradient(circle, #d772a8, #eda6d3); /* Circular ombre background */
+    background: radial-gradient(circle, #78b27f, #c4d6c6); /* Circular ombre background */
 }
 
 .page-heading {
-    font-size: 36px; /* Larger font size */
+    font-size: 50px !important; /* Larger font size */
     margin-top: 20px; /* Add margin from the top */
     margin-left: 20px; /* Align to the left */
+    position: absolute; /* Position the text absolutely */
+    top: 100px; /* Distance from the top */
+    left: 20px; /* Distance from the left */
 }
 
 /* Navigation Styles */
 .navbar {
-    /* background-color: rgb(255, 255, 255);
-    padding: 20px 20px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1); */
     position: fixed;
     top: 0;
     left: 0;
@@ -40,7 +37,7 @@ body {
 .logo {
     font-weight: bold;
     font-size: 24px;
-    color: #FFB3D9;
+    color: #78b27f;
 }
 
 .nav-links {
@@ -54,31 +51,14 @@ body {
     margin-left: 20px;
 }
 
-/* Button Styles */
-.products-btn {
-    background-color: #FFB3D9;
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    border-radius: 20px;
-    cursor: pointer;
-    font-size: 16px;
-    margin-left: 20px;
-}
-
-.products-btn:hover {
-    background-color: #b67093;
-}
-
 /* Main Content Styles */
 .main-content {
     text-align: center;
-    margin-top: 50px;
+    margin-top: 80px; /* Adjust as needed based on the heading size */
 }
 
 .main-heading {
     font-size: 48px;
-    /* font-weight: bold;s */
     color: #ffffff;
 }
 
@@ -88,21 +68,55 @@ body {
     margin-top: 10px;
 }
 
-.buttons {
-    margin-top: 20px;
+
+/*text*/
+/* Smaller Text Styles */
+.product-description {
+    font-size: 14px; /* Set the font size for the smaller text */
+    color: #ffffff; /* Set the text color */
+    margin-top: 5px; /* Add margin from the top */
+}
+
+
+/* Button Styles */
+.round-btn, .products-btn, #chat-button {
+    display: inline-block;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 16px;
+    text-decoration: none;
+    text-align: center;
+    margin: 10px;
 }
 
 .round-btn {
     background-color: #ffffff;
-    color: #b67093;
-    border: none;
-    padding: 10px 20px;
-    border-radius: 20px; /* Add border-radius for rounded corners */
-    cursor: pointer;
-    font-size: 16px;
-    margin: 0 10px;
+    color: #78b27f;
 }
 
 .round-btn:hover {
     background-color: #b67093;
+}
+
+#chat-button {
+    background-color: #c4d6c6;
+    color: white;
+    border: none;
+    padding: 20px 40px; /* Increase padding for larger size */
+    border-radius: 200px; /* Make the button larger and round */
+    cursor: pointer;
+    font-size: 20px;
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+#chat-button:hover {
+    background-color: #78b27f;
+}
+
+/* images */
+.product img {
+    max-width: 30%; /* Set the maximum width of the image to 100% of its container */
+    height: auto; /* Maintain the aspect ratio of the image */
 }

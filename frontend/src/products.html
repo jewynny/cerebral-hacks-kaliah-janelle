@@ -5,13 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Products Page</title>
     <link rel="stylesheet" href="styles/styles.css">
+    <script src="scripts/script.js"></script>
 </head>
 <body>
-    <h1 style="font-size: 36px; margin-top: 20px; margin-left: 20px;">Our Products</h1>
-
-    
     <nav class="navbar">
-        <div class="logo">Purely Esther</div>
+        <a href="index.html" class="logo">Purely Esther</a>
         <div class="nav-links">
             <a href="#about">About</a>
             <a href="#story">Story</a>
@@ -19,18 +17,31 @@
         </div>
     </nav>
 
-    <div class="product">
-        <img src="product1.jpg" alt="Product 1">
-        <h2>Product 1</h2>
-        <p>Description of Product 1</p>
+    <div class="main-content">
+        <h1 class="page-heading">Esther's Products</h1>
+        <p class="sub-heading">Listen to Esther's reccomendations and learn more about the products you can use!</p>
+
+        <button id="chat-button">Chat with Esther</button>
+        <!-- <div class="product">
+            <img src="images/youthtothepeoplecleanser.png" alt="Product 1">
+            <h2>Youth to the people</h2>
+            <p>Superfood Gentle Antioxidant Refillable Cleanser</p>
+            <p class="product-description">Additional details about Product 1</p>
+        </div> -->
+        <div class="product">
+            <img src="images/youthtothepeoplecleanser.png" alt="Product 1">
+            <h2>Youth to the people</h2>
+            <p class="sub-heading">Superfood Gentle Antioxidant Refillable Cleanser</p>
+            <p class="product-description">$39</p>
+        </div>
+        
+        <div class="product">
+            <img src="product2.jpg" alt="Product 2">
+            <h2>Product 2</h2>
+            <p>Description of Product 2</p>
+        </div>
+        
+        <!-- Add more product sections as needed -->
     </div>
-    
-    <div class="product">
-        <img src="product2.jpg" alt="Product 2">
-        <h2>Product 2</h2>
-        <p>Description of Product 2</p>
-    </div>
-    
-    <!-- Add more product sections as needed -->
 </body>
 </html>

@@ -1,12 +1,10 @@
-// JavaScript file to handle button click event
+// Function to open Kindo chatbot link in a new window
+function openKindoChatbot() {
+    window.open('https://app.kindo.ai/?workflowId=c1c9d8fc-d8e3-4b42-9dc2-24398616e0b0', '_blank');
+}
 
+// Event listener to trigger the chatbot function on button click
 document.addEventListener('DOMContentLoaded', function() {
-    // Get the "Products" button element
-    var productsButton = document.querySelector('.products-btn');
-
-    // Add a click event listener to the button
-    productsButton.addEventListener('click', function() {
-        // Navigate to the products.html page when the button is clicked
-        window.location.href = 'products.html';
-    });
+    const chatButton = document.getElementById('chat-button');
+    chatButton.addEventListener('click', openKindoChatbot);
 });
