@@ -1,8 +1,12 @@
-document.getElementById('contact-form').addEventListener('submit', function(event) {
-    event.preventDefault(); // Prevent the form from submitting
+// JavaScript file to handle button click event
 
-    const name = document.getElementById('name').value;
-    const email = document.getElementById('email').value;
+document.addEventListener('DOMContentLoaded', function() {
+    // Get the "Products" button element
+    var productsButton = document.querySelector('.products-btn');
 
-    alert(`Thank you, ${name}! Your email (${email}) has been received.`);
+    // Add a click event listener to the button
+    productsButton.addEventListener('click', function() {
+        // Navigate to the products.html page when the button is clicked
+        window.location.href = 'products.html';
+    });
 });

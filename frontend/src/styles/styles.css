@@ -3,12 +3,18 @@ body {
     margin: 0;
     padding: 0;
     font-family: 'Manrope', sans-serif; /* Change the font to Manrope */
-    color: #6f79b6;
+    color: #333;
     display: flex;
     justify-content: center; /* Horizontally center the content */
     align-items: center; /* Vertically center the content */
     min-height: 100vh; /* Set a minimum height to fill the viewport */
     background: radial-gradient(circle, #d772a8, #eda6d3); /* Circular ombre background */
+}
+
+.page-heading {
+    font-size: 36px; /* Larger font size */
+    margin-top: 20px; /* Add margin from the top */
+    margin-left: 20px; /* Align to the left */
 }
 
 /* Navigation Styles */
@@ -98,5 +104,5 @@ body {
 }
 
 .round-btn:hover {
-    background-color: #0056b3;
+    background-color: #b67093;
 }
