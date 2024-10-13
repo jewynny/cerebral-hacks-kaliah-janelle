@@ -2,14 +2,29 @@
 body {
     margin: 0;
     padding: 0;
-    font-family: Arial, sans-serif;
+    font-family: 'Manrope', sans-serif; /* Change the font to Manrope */
     color: #6f79b6;
+    display: flex;
+    justify-content: center; /* Horizontally center the content */
+    align-items: center; /* Vertically center the content */
+    min-height: 100vh; /* Set a minimum height to fill the viewport */
+    background: radial-gradient(circle, #d772a8, #eda6d3); /* Circular ombre background */
 }
 
 /* Navigation Styles */
 .navbar {
-    background-color: rgb(252, 229, 255);
-    padding: 15px 20px;
+    /* background-color: rgb(255, 255, 255);
+    padding: 20px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1); */
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: rgb(255, 255, 255);
+    padding: 20px 40px; /* Increase the padding on the sides */
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -19,7 +34,7 @@ body {
 .logo {
     font-weight: bold;
     font-size: 24px;
-    color: #333;
+    color: #FFB3D9;
 }
 
 .nav-links {
@@ -35,7 +50,7 @@ body {
 
 /* Button Styles */
 .products-btn {
-    background-color: #cf80bd;
+    background-color: #FFB3D9;
     color: white;
     border: none;
     padding: 10px 20px;
@@ -46,5 +61,42 @@ body {
 }
 
 .products-btn:hover {
-    background-color: #db3eb6;
+    background-color: #b67093;
+}
+
+/* Main Content Styles */
+.main-content {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.main-heading {
+    font-size: 48px;
+    /* font-weight: bold;s */
+    color: #ffffff;
+}
+
+.sub-heading {
+    font-size: 16px;
+    color: #ffffff;
+    margin-top: 10px;
+}
+
+.buttons {
+    margin-top: 20px;
+}
+
+.round-btn {
+    background-color: #ffffff;
+    color: #b67093;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 20px; /* Add border-radius for rounded corners */
+    cursor: pointer;
+    font-size: 16px;
+    margin: 0 10px;
+}
+
+.round-btn:hover {
+    background-color: #0056b3;
 }
